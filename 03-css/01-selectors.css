@@ -6,12 +6,35 @@
   --royalblue: #4169e1;
   --teal: #008080;
   --violet: #9400d3;
+  --green: #008000;
 }
 
 /* Use attribute selectors for the first part of the exercise */
-
+/*
 li[class] {
   color: var(--red);
+}
+*/
+
+li[id='cat']{
+  color: var(--teal);
+}
+
+li[class ^= 'p']{
+  color: var(--green);
+}
+
+li[class='parrot'] {
+  color: var(--green);
+}
+
+li[class *= 'do']{
+  color: var(--royalblue);
+}
+
+
+li[class $= 'g']{
+  color: var(--violet);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
@@ -19,3 +42,13 @@ li[class] {
 section li {
   color: var(--green);
 }
+
+.first ~ li{
+  color: var(--violet);
+}
+
+.second + li {
+  color: var(--royalblue);
+}
+
+
