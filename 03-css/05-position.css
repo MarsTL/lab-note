@@ -10,9 +10,8 @@
   color: var(--white);
 }
 
-.main{
+.main {
   margin-top: 80px;
-
 }
 .static {
   position: static;

@@ -23,7 +23,7 @@ section .main::first-line {
 }
 
 /*(1, 2, 4)*/
-nav ul.menu li#first a:not([class='visited']) {
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
 

@@ -3,10 +3,10 @@
   margin: 40px auto;
 }
 
-p::first-letter{
+p::first-letter {
   font-size: 3em;
 }
 
-p:hover{
+p:hover {
   background-color: lightskyblue;
 }
