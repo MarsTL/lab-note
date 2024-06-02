@@ -4,12 +4,19 @@ const replaceItems = (input) => {
   // for reference, see the MDN "Regular Expressions" entry:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
-  return input;
+  //let re = /gold/gi;
+  //  input = input.replace(re, 'SHINY'). replace(/wander/i, 'roam');
+
+  //input = input.replace(re, 'SHINY'). replace(/wander/i, 'roam');
+  return (input = input.replace(/gold/gi, "SHINY").replace(/wander/i, "roam"));
 };
 
-console.log(replaceItems('All that is gold does not glitter'));
+console.log(replaceItems("All that is gold does not glitter"));
 // expected: 'All that is SHINY does not glitter'
-console.log(replaceItems('Wisdom is better than silver or GOLD.'));
+console.log(replaceItems("Wisdom is better than silver or GOLD."));
 // expected: 'Wisdom is better than silver or SHINY.'
-console.log(replaceItems('Not all those who Wander are lost'));
+console.log(replaceItems("Not all those who Wander are lost"));
 // expected: 'Not all those who roam are lost'
+
+//Write a function replaceItems that takes in a string and return a string where 'gold' replaced by "SHINY"
+//and "wander" iis replaced by "roam", regardless of the cse of the letters
