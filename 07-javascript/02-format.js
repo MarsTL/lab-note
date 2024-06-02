@@ -4,7 +4,20 @@ const formatItems = (input) => {
   // for reference, see the MDN Number page:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-  return input;
+  //for (let i=0; i < input.length; i++){
+  //  console.log(input[i]);
+  //}
+
+  let results = [];
+
+  //second loop not very recommended
+  for (let item of input){
+   // console.log(item.toFixed(3));
+    results.push(item.toFixed(3));
+  }
+
+
+  return results.join(', ');
 };
 
 console.log(formatItems([1, 4, 17, 26, 41]));
@@ -13,3 +26,6 @@ console.log(formatItems([34.0, 12.0, 13.7, 760.1, 10.5]));
 // expected: '34.000, 12.000, 13.700, 760.100, 10.500'
 console.log(formatItems([235.235778, 1.2346789, 14.7, 97.3, 714.1245678]));
 // expected: '235.236, 1.235, 14.700, 97.300, 714.125'
+
+//write a function 'formatItems' that takes in an array of numbers and retturns a string of the concatenated
+//numbers, separates by commas and with each number having three digits after the decimal point
